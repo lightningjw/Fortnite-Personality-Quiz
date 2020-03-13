@@ -1,0 +1,453 @@
+$(document).ready(() => {
+  $("img#questionspicture").toggle();
+  $("#start").click( () => {
+    $("div#details").toggle();
+    $("div#starting").toggle();
+    $("div#timer").toggle();
+    $("span#skipButtons").toggle();
+    $("button#personalDetailsSkip").toggle();
+  });
+  $("button#detail").click( () => {
+    $("div#details").toggle();
+    $("div#firstquestion").toggle();
+    $("img#questionspicture").toggle();
+    $("button#personalDetailsSkip").toggle();
+    $("button#1Skip").toggle();
+  });
+  $("button#1stquestion2").click( () => {
+    $("div#details").toggle();
+    $("div#firstquestion").toggle();
+    $("img#questionspicture").toggle();
+    $("button#personalDetailsSkip").toggle();
+    $("button#1Skip").toggle();
+  });
+  $("button#1stquestion").click( () => {
+    $("div#firstquestion").toggle();
+    $("div#secondquestion").toggle();
+    $("button#1Skip").toggle();
+    $("button#2Skip").toggle();
+  });
+  $("button#2ndquestion2").click( () => {
+    $("div#firstquestion").toggle();
+    $("div#secondquestion").toggle();
+    $("button#1Skip").toggle();
+    $("button#2Skip").toggle();
+  });
+  $("button#2ndquestion").click( () => {
+    $("div#secondquestion").toggle();
+    $("div#thirdquestion").toggle();
+    $("button#2Skip").toggle();
+    $("button#3Skip").toggle();
+  });
+  $("button#3rdquestion2").click( () => {
+    $("div#secondquestion").toggle();
+    $("div#thirdquestion").toggle();
+    $("button#2Skip").toggle();
+    $("button#3Skip").toggle();
+  });
+  $("button#3rdquestion").click( () => {
+    $("div#thirdquestion").toggle();
+    $("div#fourthquestion").toggle();
+    $("button#3Skip").toggle();
+    $("button#4Skip").toggle();
+  });
+  $("button#4thquestion2").click( () => {
+    $("div#thirdquestion").toggle();
+    $("div#fourthquestion").toggle();
+    $("button#3Skip").toggle();
+    $("button#4Skip").toggle();
+  });
+  $("button#4thquestion").click( () => {
+    $("div#fourthquestion").toggle();
+    $("div#fifthquestion").toggle();
+    $("button#4Skip").toggle();
+    $("button#5Skip").toggle();
+  });
+  $("button#5thquestion2").click( () => {
+    $("div#fourthquestion").toggle();
+    $("div#fifthquestion").toggle();
+    $("button#4Skip").toggle();
+    $("button#5Skip").toggle();
+  });
+  $("button#5thquestion").click( () => {
+    $("div#fifthquestion").toggle();
+    $("div#sixthquestion").toggle();
+    $("button#5Skip").toggle();
+    $("button#6Skip").toggle();
+  });
+  $("button#6thquestion2").click( () => {
+    $("div#fifthquestion").toggle();
+    $("div#sixthquestion").toggle();
+    $("button#5Skip").toggle();
+    $("button#6Skip").toggle();
+  });
+  $("button#6thquestion").click( () => {
+    $("div#sixthquestion").toggle();
+    $("div#seventhquestion").toggle();
+    $("button#6Skip").toggle();
+    $("button#7Skip").toggle();
+  });
+  $("button#7thquestion2").click( () => {
+    $("div#sixthquestion").toggle();
+    $("div#seventhquestion").toggle();
+    $("button#6Skip").toggle();
+    $("button#7Skip").toggle();
+  });
+  $("button#7thquestion").click( () => {
+    $("div#seventhquestion").toggle();
+    $("div#eighthquestion").toggle();
+    $("button#7Skip").toggle();
+    $("button#8Skip").toggle();
+  });
+  $("button#8thquestion2").click( () => {
+    $("div#seventhquestion").toggle();
+    $("div#eighthquestion").toggle();
+    $("button#7Skip").toggle();
+    $("button#8Skip").toggle();
+  });
+  $("button#8thquestion").click( () => {
+    $("div#eighthquestion").toggle();
+    $("div#ninthquestion").toggle();
+    $("button#8Skip").toggle();
+    $("button#9Skip").toggle();
+  });
+  $("button#9thquestion2").click( () => {
+    $("div#eighthquestion").toggle();
+    $("div#ninthquestion").toggle();
+    $("button#8Skip").toggle();
+    $("button#9Skip").toggle();
+  });
+  $("button#9thquestion").click( () => {
+    $("div#ninthquestion").toggle();
+    $("div#tenthquestion").toggle();
+    $("button#9Skip").toggle();
+    $("button#10Skip").toggle();
+  });
+  $("button#10thquestion2").click( () => {
+    $("div#ninthquestion").toggle();
+    $("div#tenthquestion").toggle();
+    $("button#9Skip").toggle();
+    $("button#10Skip").toggle();
+  });
+  $("button#personalDetailsSkip").click( () => {
+    $("img#questionspicture").toggle(false);
+    $("div#details").toggle(true);
+    $("div#firstquestion").toggle(false);
+    $("div#secondquestion").toggle(false);
+    $("div#thirdquestion").toggle(false);
+    $("div#fourthquestion").toggle(false);
+    $("div#fifthquestion").toggle(false);
+    $("div#sixthquestion").toggle(false);
+    $("div#seventhquestion").toggle(false);
+    $("div#eighthquestion").toggle(false);
+    $("div#ninthquestion").toggle(false);
+    $("div#tenthquestion").toggle(false);
+    $("button#personalDetailsSkip").toggle(false);
+    $("button#1Skip").toggle(true);
+    $("button#2Skip").toggle(true);
+    $("button#3Skip").toggle(true);
+    $("button#4Skip").toggle(true);
+    $("button#5Skip").toggle(true);
+    $("button#6Skip").toggle(true);
+    $("button#7Skip").toggle(true);
+    $("button#8Skip").toggle(true);
+    $("button#9Skip").toggle(true);
+    $("button#10Skip").toggle(true);
+  });
+  $("button#1Skip").click( () => {
+    $("img#questionspicture").toggle(true);
+    $("div#details").toggle(false);
+    $("div#firstquestion").toggle(true);
+    $("div#secondquestion").toggle(false);
+    $("div#thirdquestion").toggle(false);
+    $("div#fourthquestion").toggle(false);
+    $("div#fifthquestion").toggle(false);
+    $("div#sixthquestion").toggle(false);
+    $("div#seventhquestion").toggle(false);
+    $("div#eighthquestion").toggle(false);
+    $("div#ninthquestion").toggle(false);
+    $("div#tenthquestion").toggle(false);
+    $("button#personalDetailsSkip").toggle(true);
+    $("button#1Skip").toggle(false);
+    $("button#2Skip").toggle(true);
+    $("button#3Skip").toggle(true);
+    $("button#4Skip").toggle(true);
+    $("button#5Skip").toggle(true);
+    $("button#6Skip").toggle(true);
+    $("button#7Skip").toggle(true);
+    $("button#8Skip").toggle(true);
+    $("button#9Skip").toggle(true);
+    $("button#10Skip").toggle(true);
+  });
+  $("button#2Skip").click( () => {
+    $("img#questionspicture").toggle(true);
+    $("div#details").toggle(false);
+    $("div#firstquestion").toggle(false);
+    $("div#secondquestion").toggle(true);
+    $("div#thirdquestion").toggle(false);
+    $("div#fourthquestion").toggle(false);
+    $("div#fifthquestion").toggle(false);
+    $("div#sixthquestion").toggle(false);
+    $("div#seventhquestion").toggle(false);
+    $("div#eighthquestion").toggle(false);
+    $("div#ninthquestion").toggle(false);
+    $("div#tenthquestion").toggle(false);
+    $("button#personalDetailsSkip").toggle(true);
+    $("button#1Skip").toggle(true);
+    $("button#2Skip").toggle(false);
+    $("button#3Skip").toggle(true);
+    $("button#4Skip").toggle(true);
+    $("button#5Skip").toggle(true);
+    $("button#6Skip").toggle(true);
+    $("button#7Skip").toggle(true);
+    $("button#8Skip").toggle(true);
+    $("button#9Skip").toggle(true);
+    $("button#10Skip").toggle(true);
+  });
+  $("button#3Skip").click( () => {
+    $("img#questionspicture").toggle(true);
+    $("div#details").toggle(false);
+    $("div#firstquestion").toggle(false);
+    $("div#secondquestion").toggle(false);
+    $("div#thirdquestion").toggle(true);
+    $("div#fourthquestion").toggle(false);
+    $("div#fifthquestion").toggle(false);
+    $("div#sixthquestion").toggle(false);
+    $("div#seventhquestion").toggle(false);
+    $("div#eighthquestion").toggle(false);
+    $("div#ninthquestion").toggle(false);
+    $("div#tenthquestion").toggle(false);
+    $("button#personalDetailsSkip").toggle(true);
+    $("button#1Skip").toggle(true);
+    $("button#2Skip").toggle(true);
+    $("button#3Skip").toggle(false);
+    $("button#4Skip").toggle(true);
+    $("button#5Skip").toggle(true);
+    $("button#6Skip").toggle(true);
+    $("button#7Skip").toggle(true);
+    $("button#8Skip").toggle(true);
+    $("button#9Skip").toggle(true);
+    $("button#10Skip").toggle(true);
+  });
+  $("button#4Skip").click( () => {
+    $("img#questionspicture").toggle(true);
+    $("div#details").toggle(false);
+    $("div#firstquestion").toggle(false);
+    $("div#secondquestion").toggle(false);
+    $("div#thirdquestion").toggle(false);
+    $("div#fourthquestion").toggle(true);
+    $("div#fifthquestion").toggle(false);
+    $("div#sixthquestion").toggle(false);
+    $("div#seventhquestion").toggle(false);
+    $("div#eighthquestion").toggle(false);
+    $("div#ninthquestion").toggle(false);
+    $("div#tenthquestion").toggle(false);
+    $("button#personalDetailsSkip").toggle(true);
+    $("button#1Skip").toggle(true);
+    $("button#2Skip").toggle(true);
+    $("button#3Skip").toggle(true);
+    $("button#4Skip").toggle(false);
+    $("button#5Skip").toggle(true);
+    $("button#6Skip").toggle(true);
+    $("button#7Skip").toggle(true);
+    $("button#8Skip").toggle(true);
+    $("button#9Skip").toggle(true);
+    $("button#10Skip").toggle(true);
+  });
+  $("button#5Skip").click( () => {
+    $("img#questionspicture").toggle(true);
+    $("div#details").toggle(false);
+    $("div#firstquestion").toggle(false);
+    $("div#secondquestion").toggle(false);
+    $("div#thirdquestion").toggle(false);
+    $("div#fourthquestion").toggle(false);
+    $("div#fifthquestion").toggle(true);
+    $("div#sixthquestion").toggle(false);
+    $("div#seventhquestion").toggle(false);
+    $("div#eighthquestion").toggle(false);
+    $("div#ninthquestion").toggle(false);
+    $("div#tenthquestion").toggle(false);
+    $("button#personalDetailsSkip").toggle(true);
+    $("button#1Skip").toggle(true);
+    $("button#2Skip").toggle(true);
+    $("button#3Skip").toggle(true);
+    $("button#4Skip").toggle(true);
+    $("button#5Skip").toggle(false);
+    $("button#6Skip").toggle(true);
+    $("button#7Skip").toggle(true);
+    $("button#8Skip").toggle(true);
+    $("button#9Skip").toggle(true);
+    $("button#10Skip").toggle(true);
+  });
+  $("button#6Skip").click( () => {
+    $("img#questionspicture").toggle(true);
+    $("div#details").toggle(false);
+    $("div#firstquestion").toggle(false);
+    $("div#secondquestion").toggle(false);
+    $("div#thirdquestion").toggle(false);
+    $("div#fourthquestion").toggle(false);
+    $("div#fifthquestion").toggle(false);
+    $("div#sixthquestion").toggle(true);
+    $("div#seventhquestion").toggle(false);
+    $("div#eighthquestion").toggle(false);
+    $("div#ninthquestion").toggle(false);
+    $("div#tenthquestion").toggle(false);
+    $("button#personalDetailsSkip").toggle(true);
+    $("button#1Skip").toggle(true);
+    $("button#2Skip").toggle(true);
+    $("button#3Skip").toggle(true);
+    $("button#4Skip").toggle(true);
+    $("button#5Skip").toggle(true);
+    $("button#6Skip").toggle(false);
+    $("button#7Skip").toggle(true);
+    $("button#8Skip").toggle(true);
+    $("button#9Skip").toggle(true);
+    $("button#10Skip").toggle(true);
+  });
+  $("button#7Skip").click( () => {
+    $("img#questionspicture").toggle(true);
+    $("div#details").toggle(false);
+    $("div#firstquestion").toggle(false);
+    $("div#secondquestion").toggle(false);
+    $("div#thirdquestion").toggle(false);
+    $("div#fourthquestion").toggle(false);
+    $("div#fifthquestion").toggle(false);
+    $("div#sixthquestion").toggle(false);
+    $("div#seventhquestion").toggle(true);
+    $("div#eighthquestion").toggle(false);
+    $("div#ninthquestion").toggle(false);
+    $("div#tenthquestion").toggle(false);
+    $("button#personalDetailsSkip").toggle(true);
+    $("button#1Skip").toggle(true);
+    $("button#2Skip").toggle(true);
+    $("button#3Skip").toggle(true);
+    $("button#4Skip").toggle(true);
+    $("button#5Skip").toggle(true);
+    $("button#6Skip").toggle(true);
+    $("button#7Skip").toggle(false);
+    $("button#8Skip").toggle(true);
+    $("button#9Skip").toggle(true);
+    $("button#10Skip").toggle(true);
+  });
+  $("button#8Skip").click( () => {
+    $("img#questionspicture").toggle(true);
+    $("div#details").toggle(false);
+    $("div#firstquestion").toggle(false);
+    $("div#secondquestion").toggle(false);
+    $("div#thirdquestion").toggle(false);
+    $("div#fourthquestion").toggle(false);
+    $("div#fifthquestion").toggle(false);
+    $("div#sixthquestion").toggle(false);
+    $("div#seventhquestion").toggle(false);
+    $("div#eighthquestion").toggle(true);
+    $("div#ninthquestion").toggle(false);
+    $("div#tenthquestion").toggle(false);
+    $("button#personalDetailsSkip").toggle(true);
+    $("button#1Skip").toggle(true);
+    $("button#2Skip").toggle(true);
+    $("button#3Skip").toggle(true);
+    $("button#4Skip").toggle(true);
+    $("button#5Skip").toggle(true);
+    $("button#6Skip").toggle(true);
+    $("button#7Skip").toggle(true);
+    $("button#8Skip").toggle(false);
+    $("button#9Skip").toggle(true);
+    $("button#10Skip").toggle(true);
+  });
+  $("button#9Skip").click( () => {
+    $("img#questionspicture").toggle(true);
+    $("div#details").toggle(false);
+    $("div#firstquestion").toggle(false);
+    $("div#secondquestion").toggle(false);
+    $("div#thirdquestion").toggle(false);
+    $("div#fourthquestion").toggle(false);
+    $("div#fifthquestion").toggle(false);
+    $("div#sixthquestion").toggle(false);
+    $("div#seventhquestion").toggle(false);
+    $("div#eighthquestion").toggle(false);
+    $("div#ninthquestion").toggle(true);
+    $("div#tenthquestion").toggle(false);
+    $("button#personalDetailsSkip").toggle(true);
+    $("button#1Skip").toggle(true);
+    $("button#2Skip").toggle(true);
+    $("button#3Skip").toggle(true);
+    $("button#4Skip").toggle(true);
+    $("button#5Skip").toggle(true);
+    $("button#6Skip").toggle(true);
+    $("button#7Skip").toggle(true);
+    $("button#8Skip").toggle(true);
+    $("button#9Skip").toggle(false);
+    $("button#10Skip").toggle(true);
+  });
+  $("button#10Skip").click( () => {
+    $("img#questionspicture").toggle(true);
+    $("div#details").toggle(false);
+    $("div#firstquestion").toggle(false);
+    $("div#secondquestion").toggle(false);
+    $("div#thirdquestion").toggle(false);
+    $("div#fourthquestion").toggle(false);
+    $("div#fifthquestion").toggle(false);
+    $("div#sixthquestion").toggle(false);
+    $("div#seventhquestion").toggle(false);
+    $("div#eighthquestion").toggle(false);
+    $("div#ninthquestion").toggle(false);
+    $("div#tenthquestion").toggle(true);
+    $("button#personalDetailsSkip").toggle(true);
+    $("button#1Skip").toggle(true);
+    $("button#2Skip").toggle(true);
+    $("button#3Skip").toggle(true);
+    $("button#4Skip").toggle(true);
+    $("button#5Skip").toggle(true);
+    $("button#6Skip").toggle(true);
+    $("button#7Skip").toggle(true);
+    $("button#8Skip").toggle(true);
+    $("button#9Skip").toggle(true);
+    $("button#10Skip").toggle(false);
+  });
+  $("button#1Skip").click( () => {
+    $("img#questionspicture").toggle(true);
+    $("div#details").toggle(false);
+    $("div#firstquestion").toggle(true);
+    $("div#secondquestion").toggle(false);
+    $("div#thirdquestion").toggle(false);
+    $("div#fourthquestion").toggle(false);
+    $("div#fifthquestion").toggle(false);
+    $("div#sixthquestion").toggle(false);
+    $("div#seventhquestion").toggle(false);
+    $("div#eighthquestion").toggle(false);
+    $("div#ninthquestion").toggle(false);
+    $("div#tenthquestion").toggle(false);
+    $("button#personalDetailsSkip").toggle(true);
+    $("button#1Skip").toggle(false);
+    $("button#2Skip").toggle(true);
+    $("button#3Skip").toggle(true);
+    $("button#4Skip").toggle(true);
+    $("button#5Skip").toggle(true);
+    $("button#6Skip").toggle(true);
+    $("button#7Skip").toggle(true);
+    $("button#8Skip").toggle(true);
+    $("button#9Skip").toggle(true);
+    $("button#10Skip").toggle(true);
+  });
+
+  var count = 180;
+
+  var counter=setInterval(timer, 1000);
+
+  function timer(){
+    var timer = document.getElementById("time");
+    var form = document.getElementById("fortniteForm");
+    count=count-1;
+    if (count <= 0){
+       clearInterval(counter);
+       timer.innerHTML = "Time ran out";
+       form.submit();
+       return;
+    }
+    timer.innerHTML= count + " secs";
+  }
+});
+
+function clearBody(){
+  $("*[display != 'none']").toggle();
+}

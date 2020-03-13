@@ -1,0 +1,221 @@
+div#parentheader{
+  width: 100%;
+  height: 100px;
+  margin: 0;
+  padding: 0;
+}
+#header{
+  align-self: center;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  position: relative;
+    left: -32%;
+    top: -170px;
+  -webkit-transform:scale(0.2);
+  -moz-transform:scale(0.2);
+  -ms-transform:scale(0.2);
+  transform:scale(0.2);
+}
+img#ATDPlogo{
+  padding: 10px;
+}
+h1#standardheader{
+  font-family: Impact;
+  padding-left: 30px;
+  font-size: 10em;
+  text-decoration: underline;
+  align-self: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+input:invalid{
+  border: 1px solid #ff0000;
+}
+p.invalidmessage{
+  color: red;
+}
+#validation{
+   padding: 1%;
+}
+h1{
+  text-align: center;
+  font-size: 5em;
+  line-height: 0.5em;
+}
+h2{
+  text-align: center;
+  font-size: 2em;
+}
+div#timer{
+  display: none;
+  margin-left: 80%;
+  text-align: center;
+  background-color: purple;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 1em;
+  width: 10%;
+  height: 2.5%;
+}
+div#timer span#time{
+  background-color: #FFFFFF;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+fieldset#grouping{
+  border: 0;
+}
+legend{
+  background-color: #efefef;
+  border: 1px solid #dcdcdc;
+  border-radius: 10px
+  padding: 10px 20px;
+  text-align: left;
+  text-transform: uppercase;
+}
+div#starting{
+  display: initial;
+}
+fieldset#personaldetails{
+  margin:auto;
+  width: 350px;
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: left;
+}
+div.question p{
+  font-size: 1em;
+}
+div.question, div#details, #submitbutton, span#skipButtons{
+  display: none;
+}
+div.question{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+div.questions{
+  text-align: center;
+}
+table, table td img, fieldset#personaldetails, div#details{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+#skipButtons{
+  padding: 5px;
+  background-color: #808080;
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+img#questionspicture{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+img#background{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+label.picturebutton > input{
+  visibility: hidden;
+  position: absolute;
+}
+label.picturebutton > input + img{
+  cursor:pointer;
+  border:2px solid transparent;
+}
+label.picturebutton > input:hover + img{
+  border:2px solid lightblue;
+}
+label.picturebutton > input:checked + img{
+  border:2px solid blue;
+}
+#pistol.resize, #rpg.resize, #scar.resize{
+  width: 50%;
+  height: 50%;
+}
+#panther.resize, #lion.resize, #unicorn.resize{
+  width: 50%;
+  height: 50%;
+}
+#horse.resize{
+  height: 75%;
+}
+.finalResultImage.resize{
+  width: 50%;
+  height: 50%;
+}
+.finalResultImage{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.finalResultCharacter{
+  text-align: center;
+}
+.finalResultDescription{
+   text-align: center;
+   font-size: 1.3em;
+}
+p button.next, p button.back, p button#start{
+  font-size: 2em;
+}
+button.next, button.back{
+  color: #ffffff;
+  background-color: #009966;
+  border: 1px solid #006633;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 1em;
+  align: center;
+  width: 20%;
+  height: 5%;
+}
+input[type="submit"], button#start{
+  color: #ffffff;
+  border: 1px solid #006633;
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: 50px;
+  background-color: #009966;
+  font-size: 2em;
+  align: center;
+  width: 100%;
+  height: 10%;
+}
+button#tryAgain{
+  color: #ffffff;
+  border: 1px solid #006633;
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: 50px;
+  background-color: #009966;
+  font-size: 2em;
+  align: center;
+  width: 50%;
+  height: 40%;
+}
+input[type = "submit"]:hover, button#start:hover, button.next:hover, button.back:hover, button#tryAgain:hover{
+  border: 1px solid #006633;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #00cc33;
+}
+button.skip:hover{
+  border: 1px solid #006633;
+  color: #ffffff;
+  background-color: lightblue;
+  cursor: pointer;
+}
+.footer {
+   position: relative;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+ }
